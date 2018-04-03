@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+.orangeBg{
+    background-color: #f7b039;
+}
+.greenBg{
+    background-color: #3cd68a;
+}
+.purpleBg{
+    background-color: #b0a2f8;
+}
+.blueBg{
+    background-color: #38c6fb;
+}
+.yellowBg{
+    background-color: #fff6c9;
+}
+.redBg{
+    background-color: #fb3894;
+}
+.whiteT{
+    text-align: center;
+    color: #fff;
+}
+.pd20{
+    padding: 20px 0;
+}
+.mar20{
+    margin: 20px;
+    border-radius: 10px;
+}
+.pad20{
+    padding: 20px;
+}
+.marT20{
+    margin-top:20px;
+}
+
+.preview {
+  width: 375px;
+  height: 667px;
+  position: relative;
+  margin-top: 20px;
+  background-image: url("../images/vippage.png");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 6px #bbb;
+  overflow: hidden;
+}
+.vipBg{
+  display: none;
+  width: 100%;
+  height: 173px;
+  position: absolute;
+  left: 0;
+  top: 64px;
+}
+.previewBox {
+  width: 100%;
+  height: 246px;
+  position: absolute;
+  top: 237px;
+}
+.vipBottom{
+  display: none;
+  width: 100%;
+  height: 134px;
+  position: absolute;
+  bottom: 50px;
+}
+.payNow{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  background: #F84702;
+}
+.title{
+  display: none;
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  background: #fff;
+}
+.rights{
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  padding: 15px;
+  background: #fff;
+}
+.require{
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  background: #fff;
+}

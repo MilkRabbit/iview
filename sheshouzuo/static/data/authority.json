@@ -1,0 +1,130 @@
+{
+  "title":"权限数组",
+  "data":[
+    {
+      "id": "1",
+      "name": "工作台",
+      "url": "index",
+      "icon":"ios-home"
+    },
+    {
+      "id": 2,
+      "name": "店铺管理",
+      "icon":"clipboard",
+      "subItems": [
+        {
+          "id": "2-1",
+          "url": "2-1&shopManage_setting",
+          "name": "店铺设置"
+        },
+        {
+          "id": "2-2",
+          "url": "2-2&integration",
+          "name": "积分设置"
+        },
+        {
+          "id": "2-3",
+          "url": "2-3&customer",
+          "name": "客服消息设置"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "相册管理",
+      "url": "album",
+      "icon":"images"
+    },
+    {
+      "id": 4,
+      "name": "服务管理",
+      "icon":"ios-rose",
+      "subItems": [
+        {
+          "id": "4-1",
+          "url": "4-1&serverSort_list",
+          "name": "分类列表"
+        },
+        {
+          "id": "4-2",
+          "url": "4-2&server_list",
+          "name": "服务列表"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "订单管理",
+      "url": "order",
+      "icon":"ios-list"
+    },
+    {
+      "id": 6,
+      "name": "财务管理",
+      "url": "finance",
+      "icon":"social-yen"
+    },
+    {
+      "id": 9,
+      "name": "专题管理",
+      "icon":"ios-book",
+      "subItems": [
+        {
+          "id": "9-1",
+          "url": "9-1&specialPage",
+          "name": "专题页列表"
+        },
+        {
+          "id": "9-2",
+          "url": "9-2&special",
+          "name": "专题列表"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "营销管理",
+      "icon":"ios-cart",
+      "subItems": [
+        {
+          "id": "10-1",
+          "url": "10-1&myActivity",
+          "name": "我的营销"
+        },
+        {
+          "id": "10-2",
+          "url": "10-2&activity",
+          "name": "营销中心"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "设置",
+      "icon":"settings",
+      "subItems": [
+        {
+          "id": "12-1",
+          "url": "12-1&authorityPage",
+          "name": "授权小程序"
+        },
+        {
+          "id": "12-2",
+          "url": "12-2&choosePackage",
+          "name": "选择套餐"
+        },
+        {
+          "id": "12-3",
+          "url": "12-3&paySet",
+          "name": "支付设置"
+        },
+        {
+          "id": "12-4",
+          "url": "12-4&closeShop",
+          "name": "删除店铺"
+        }
+      ]
+    }
+  ]
+}
+
