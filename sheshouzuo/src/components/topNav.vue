@@ -6,13 +6,11 @@
     <div class="layout">
       <div class="layout-ceiling">
         <div class="layout-ceiling-left">
-          <img class="layout-img" src="static/favicon.ico">
-          <span class="layout-title">小橙云商家后台</span>
-          <span class="layout-type">{{packageName}}</span>
+          <img class="layout-img" src="static/logo.png" >
+          <span class="layout-title">设手座后台管理系统</span>
         </div>
         <div class="layout-ceiling-main">
-          <a href="https://staticfiles.xiaochengyun.cn/chooseShop" @click="clearLockr">返回店铺列表</a> |
-          <a target="_blank" href="http://bbs.xiaochengyun.cn/category/1/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3">帮助中心</a> |
+          <a href="https://sheshouzuo.mengotech.com" @click="quit">退出登录&nbsp;&nbsp;&nbsp;</a>
         </div>
       </div>
     </div>
@@ -22,16 +20,18 @@
   export default {
     data () {
       return {
-        packageName: ''
       }
     },
     created () {
-      this.packageName = this.Lockr.get("packageName");
     },
     methods: {
-      clearLockr(){
-        this.Lockr.flush();
-      }
+      quit() {
+        this.$ajax.get("/quit").then(function (res) {
+
+        }).catch(function (err) {
+          console.log("error")
+        })
+      },
     }
   }
 </script>

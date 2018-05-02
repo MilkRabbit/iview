@@ -23,23 +23,23 @@
       :default-file-list="defaultList"
       :on-success="handleSuccess"
       :format="['jpg','jpeg','png']"
-      :max-size="512"
+      :max-size="5*2014*2014"
       :on-format-error="handleFormatError"
       :on-exceeded-size="handleMaxSize"
       :before-upload="handleBeforeUpload"
       multiple
       type="drag"
-      action="https://staticfiles.xiaochengyun.cn/pic/uploadimages"
+      action="https://sheshouzuo.mengotech.com/pic/uploadimages"
       style="display: inline-block;width:58px;"
     v-show="updateBtn">
-      <div :style="{width: height + 'px',height: height + 'px','line-height': height +'px'}">
+      <div :style="{width: width + 'px',height: height + 'px','line-height': height +'px'}">
         <Icon type="camera" size="20"></Icon>
       </div>
     </Upload>
     <Modal title="View Image" v-model="visible">
       <img :src="imgName" v-if="visible" style="width: 100%">
     </Modal>
-    <div class="myFormTip" v-if="index=='notUse'">{{width}}*{{height}}像素。png、jpg、gif格式的图片，总大小不超过500kb</div>
+    <div class="myFormTip" v-if="index=='notUse'">{{width}}*{{height}}像素。png、jpg、gif格式的图片，总大小不超过5M</div>
   </div>
 </template>
 <script>

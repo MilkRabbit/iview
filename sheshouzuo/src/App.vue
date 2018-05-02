@@ -19,6 +19,13 @@
       topNav
     },
     created () {
+      this.$ajax.get("/admin/userInfo").then(function (res) {
+          if(res.data=='noData'){
+            window.location.href='https://sheshouzuo.mengotech.com'
+          }
+      }).catch(function (err) {
+        console.log("error")
+      });
     },
     methods :{
     }
